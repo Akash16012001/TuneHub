@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 80%; /* Adjust the width as needed */
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+}
+ul{
+	list-style: none;
+}

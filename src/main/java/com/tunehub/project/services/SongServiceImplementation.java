@@ -1,6 +1,7 @@
 package com.tunehub.project.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,6 +39,17 @@ public class SongServiceImplementation implements SongService {
 	public void updateSong(Song song) {
 		repo.save(song);
 		
+	}
+
+	@Override
+	public void deleteSong(int id) {
+		repo.deleteById(id);	
+	}
+
+	@Override
+	public Song getSongById(int id) {
+		Optional<Song> optionalSong = repo.findById(id);
+	    return optionalSong.orElse(null); 
 	}
 
 }

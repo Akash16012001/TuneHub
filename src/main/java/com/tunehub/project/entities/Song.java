@@ -1,7 +1,11 @@
 package com.tunehub.project.entities;
 
+//import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+//import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,11 +21,12 @@ public class Song {
 	String artist;
 	String genre;
 	String link;
+	@JsonIgnore
 	@ManyToMany
 	List<Playlist> playlists;
 	public Song() {
 		super();
-		// TODO Auto-generated constructor stub
+//		this.playlists = new ArrayList<>();
 	}
 	public Song(int id, String name, String artist, String genre, String link, List<Playlist> playlists) {
 		super();
@@ -30,6 +35,7 @@ public class Song {
 		this.artist = artist;
 		this.genre = genre;
 		this.link = link;
+//		this.playlists = playlists != null ? playlists : new ArrayList<>();
 		this.playlists = playlists;
 	}
 	public int getId() {

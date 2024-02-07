@@ -2,32 +2,32 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>User Registration</title>
 <link rel="stylesheet" th:href="@{/css/registration.css}">
 </head>
 <body>
 <div class="container">
 	<div class="container-form">
-	<h1>User Registration:</h1>
+	<h1>User Registration</h1>
 	<form action="register" method="post">
-		<label>Username : </label>
-		<input type="text" name="username">
-		<label>Email : </label>
-		<input type="email" name="email">
-		<label>Password : </label>
-		<input type="password" name="password">
+		<label>Username</label>
+		<input type="text" name="username" placeholder="Enter username">
+		<label>Email</label>
+		<input type="email" name="email" placeholder="Enter email">
+		<label>Password</label>
+		<input type="password" name="password" placeholder="Enter password">
 		<div class="gender">
-		<label>Gender : </label>
-		M<input type="radio" name="gender" value="male">
-		F<input type="radio" name="gender" value="female">
-		O<input type="radio" name="gender" value="other">
-		</div>
+		<label>Gender:</label>
+		<input type="radio" name="gender" value="male"><label>Male</label>
+		<input type="radio" name="gender" value="female"><label>Female</label>
+		<input type="radio" name="gender" value="other"><label>Other</label>
+		</div><br>
 		<div class="role">
-		<label>Role : </label>
-		Admin<input type="radio" name="role" value="admin">
-		Customer<input type="radio" name="role" value="customer">
-		</div>
-		<label>Address : </label>
+		<label>Role:</label>
+		<input type="radio" name="role" value="admin"><label>Admin</label>
+		<input type="radio" name="role" value="customer"><label>Customer</label>
+		</div><br>
+		<label>Address</label>
 		<textarea name="address"></textarea>
 		<input type="submit">
 	</form>

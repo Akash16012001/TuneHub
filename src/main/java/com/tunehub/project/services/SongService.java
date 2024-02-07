@@ -14,4 +14,8 @@ public interface SongService {
 
 	public void updateSong(Song song);
 
+	public void deleteSong(int id);
+
+	public Song getSongById(int id);
+
 }

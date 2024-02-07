@@ -6,4 +6,6 @@ import com.tunehub.project.entities.Playlist;
 
 public interface PlaylistRepository extends JpaRepository<Playlist, Integer> {
 
+	public Playlist findByName(String name);
+
 }

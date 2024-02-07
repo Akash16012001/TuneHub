@@ -2,18 +2,23 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>User Login</title>
+<link rel="stylesheet" th:href="@{/css/login.css}">
 </head>
 <body>
-	<h1>User LOGIN:</h1>
+<div class="container">
+<div class="form">
+	<h1>User LOGIN</h1>
 	<form action="validate" method="post">
-		<label>Email : </label>
-		<input type="email" name="email">
+		<label>Email</label>
+		<input type="email" name="email" placeholder="Enter email">
 		<br>
-		<label>Password : </label>
-		<input type="password" name="password">
+		<label>Password</label>
+		<input type="password" name="password" placeholder="Enter password">
 		<br>
 		<input type="submit" value="LOGIN">
 	</form>
+</div>
+</div>
 </body>
 </html>

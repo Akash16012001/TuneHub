@@ -11,39 +11,32 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
-.container-form {
+.form {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
-  padding: 100px;
+  padding: 80px;
 }
-
-.container-form h1 {
+.form h1 {
   color: #333;
   margin-bottom: 30px;
 }
-
-.container-form form {
+.form form {
   display: flex;
   flex-direction: column;
 }
-
-.container-form label {
+.form label {
   margin-bottom: 5px;
 }
-
-.container-form input,
-.container-form textarea {
+.form input{
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
@@ -51,19 +44,7 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
-.container-form .gender{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-}
-.container-form .role{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-}
-.container-form input[type="submit"] {
+.form input[type="submit"] {
   background-color: #ff0000;
   color: #fff;
   border: none;
@@ -72,7 +53,7 @@ body {
   border-radius: 20px;
 }
 
-.container-form input[type="submit"]:hover {
+.form input[type="submit"]:hover {
   background-color: #008000;
 }
 
